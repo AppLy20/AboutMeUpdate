@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pizzeria Family</title>
+    <link rel="stylesheet" type="text/css" href="./resursePizza/pizzaStyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <h1>Comandati acum!</h1>
+<div class="chenar">
+    <h2>Date de contact</h2>
+
+<form action="/index.html">
+    <div class="contact">
+    <label for="nume" id="nume">Nume</label>
+    <input type="text" id="nume" required>
+    <br>
+    
+    <label for="prenume" id="prenume">Prenume</label>
+    <input type="text" id="prenume" required>
+    <br>
+
+    <label for="email" id="email">E-mail</label>
+    <input type="email" id="email" required>
+    <br>
+
+    <label for="numar" id="numar">Numarul de telefon</label>
+    <input type="text" id="numar" required>
+    <br>
+
+    <label for="adresa" id="adresa1">Adresa Dumneavoastra</label>
+    <select id="adresa" name="adresa">
+        <option value="moara">Moara Vlasiei</option>
+        <option value="pascani">Pascani</option>
+        <option value="caciulati">Caciulati</option>
+        <option value="dascalu">Dascalu</option>
+    </select>
+    <br>
+
+    <label for="strada" id="strada">Strada si numarul</label>
+    <input type="text" id="strada">
+    <br>
+    <br>
+</form>
+</div>
+    <h2>Detalii despre comanda</h2>
+
+    <br>
+    <p class="produse">Produsul dorit</p>
+<form action="/index.html">
+    <div class="pro">
+    <input type="radio" id="pizza" name="produs">
+    <label for="produs" id="pizza">Pizza</label>
+    <input type="radio" id="burger" name="produs">
+    <label for="produs" id="burger">Burger</label>
+    <input type="radio" id="paste" name="produs">
+    <label for="produs" id="paste">Paste</label> 
+    <br>
+    <br>
+</div>
+
+    <p class="toppinguri">Toppinguri</p>
+<div class="top">
+    <input type="checkbox" id="toppi" name="Cheese">
+    <label for="topping">Cheese</label><br>
+
+    <input type="checkbox" id="toppi" name="verdeata">
+    <label for="topping">Multa verdeata</label><br>
+
+    <input type="checkbox" id="toppi" name="sosuri">
+    <label for="topping">Mult sos</label><br>
+
+    <input type="checkbox" id="toppi" name="secret">
+    <label for="topping">Secretul bucatarului</label><br>
+</div>
+<br>
+    <label for="subbmit"></label>
+    <input type="submit" id="subbmit" value="Trimite Comanda">
+</form>
+</div>   
+</div>
+</body>
+
+</html>
