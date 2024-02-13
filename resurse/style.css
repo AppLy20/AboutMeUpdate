@@ -184,8 +184,6 @@ h1 {
     align-items: center;
     margin-top: 8%;
     margin-left: 8%;
-    width: 80%;
-    
 }
 .imagine-coding img {
     width: 450px;
@@ -198,18 +196,17 @@ h1 {
     margin-top: 50px;
     font-size: 24px;
     text-align: center;
-    margin-left: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .content-coding h3 {
-    text-align: center;
     margin-top: 50px;
     font-size: 25px;
-    margin-left: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
 }
-.content-coding {
-    margin-top: 2%;
-}
-
 
 /* Proiecte */
 
@@ -296,64 +293,6 @@ h1 {
     line-height: 150%;
     margin-bottom: 50px;
 }
-
-/* Media query proiecte */
-
-@media screen and (max-width: 600px){
-    .tabele img, .Pizza img, .Tea img {
-        max-width: 100%;
-    }
-}
-@media screen and (min-width: 601px) and (max-width: 1024px){
-    .tabele img, .Pizza img, .Tea img {
-        max-width: 80%;
-    }
-}
-@media screen and (min-width: 1025px){
-    .tabele img, .Pizza img, .Tea img {
-        max-width: 60%;
-    }
-}
-
-/* Media pasiuni */
-@media screen and (max-width: 600px){
-    .fotbal img, .gaming img, .coding img {
-        max-width: 100%;
-    }
-}
-@media screen and (min-width: 601px) and (max-width: 1024px){
-    .fotbal img, .gaming img, .coding img {
-        max-width: 80%;
-    }
-}
-@media screen and (min-width: 1025px){
-    .fotbal img, .gaming img, .coding img {
-       width: 450px;
-    }
-}
-
-/* Media font */ 
-
-@media screen and (max-width: 600px){
-    p {
-        font-size: 12px;
-    }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px){
-    p {
-        font-size: 16px;
-    }
-}
-
-@media screen and (min-width: 1025px){
-    p {
-        font-size: 20px;
-    }
-}
-
-
-
 /* FOOTER */
 
 #Contact {
@@ -375,18 +314,99 @@ h1 {
     text-decoration: none;
     font-weight: 300;
 }
- @media screen and (max-width: 600px){
-    #Contact {
-        max-width: 100%;
+ 
+/* Media Query */
+
+@media (max-width: 680px) {
+    /* Head */
+
+    .border h2 {
+        font-size: 2rem;
+        margin: 0 auto;
     }
- }
- @media screen and (max-width: 601px) and (min-width: 1024){
-    #Contact {
-        max-width: 100%;
+    .border li {
+        display: none;
     }
- }
- @media screen and (max-width: 1025px){
-    #Contact {
-        max-width: 100%;
+    .card-content {
+        text-align: center;
+    } 
+
+    /* Pasiuni */
+
+    #Pasiuni h2 {
+        text-align: center;
     }
- }
+     .fotbal, .gaming, .coding {
+        display: block;
+    } 
+    .fotbal br, .gaming br, .coding br {
+        display: none;
+    }
+    
+     .fotbal p, .gaming p, .coding p {
+        width: 85%;
+        font-size: 1.3rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+    }
+    .fotbal h3, .gaming h3, .coding h3 {
+        font-size: 2rem;
+        text-align: center;
+    } 
+    .fotbal img, .gaming img, .coding img {
+        width: 25rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    /* Proiecte */
+    .tabele p {
+        width: 85%;
+        font-size: 1.3rem;
+    }
+    .tabele img {
+        width: 25rem;
+    }
+    .container-pizza {
+        display: block;
+    }
+    .container-pizza br {
+        display: none;
+    }
+    .container-pizza p {
+        width: 85%;
+        font-size: 1.3rem;
+    }
+    .Pizza img {
+        height: auto;
+        width: 25rem;
+        margin: 0 auto;
+        display: block;
+    }
+    .Tea img {
+        width: 25rem;
+    }
+    .Tea p {
+        width: 85%;
+        font-size: 1.3rem;
+    }
+
+    /* Footer */
+
+    #Contact p {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+    .social {
+        display: none;
+    }
+    
+    .mail {
+        margin-left: 5rem;
+    }
+    .numar {
+        margin-left: 1.5rem;
+    }
+}
